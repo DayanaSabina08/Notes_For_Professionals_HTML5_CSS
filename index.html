@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>HTML5 Notas para profesionales</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="print.css" media="print">
+	
+	</head><body>
+				<div id="wrapper">
+				<h1><a>HTML5 Notas para profesionales</a></h1>
+				<table id="idioma1">
+					<tr>
+					<TH><b>idioma:</b></th>
+					<th><a href="index1.html"><img  id="idioma" src="img/en.png"/></a>
+					<th><a href="index.html"><img  id="idioma" src="img/es.jpg"/></a>
+					</tr>
+					<tr>
+					</table>
+				    
+				
+<header>
+<footer>
+	<div class="headline">
+		<h1><a>Capítulo 5: Formato de texto</a></h1>
+		<p>Si bien la mayoría de las etiquetas HTML se utilizan para crear elementos, HTML también proporciona etiquetas de formato de texto para aplicar
+		estilos relacionados con el texto a porciones de texto. Este tema incluye ejemplos de formato de texto HTML, como resaltado,
+		texto en negrita, subrayado, subíndice y tachado.</p>
+		<h2><a>Sección 5.1: Resaltado</a></h2>
+		</span>
+		<p>El elemento <code>&lt;mark&gt;</code> es nuevo en HTML5 y se utiliza para marcar o resaltar texto en un documento "debido a su relevancia en
+		otro contexto ".[1].</p>
+		
+		
+		<p>El ejemplo más común sería en los resultados de una búsqueda donde el usuario ha ingresado una consulta de búsqueda y
+		los resultados se muestran resaltando la consulta deseada.</p>
+		
+		
+		<p><code>&lt;(p)&gt;</code>Aquí hay contenido de un artículo que incluye el <code>&lt;(mark)&gt;</code>consulta buscada
+		 <code>&lt;/mark&gt;</code>que estamos buscando. Resaltar el texto hará que sea más fácil para el usuario
+		encontrar lo que están buscando.<code>&lt;/p&gt;</code></p>
+		
+		
+		<p>Salida:</p>
+		
+
+		
+		<p>Aquí hay contenido de un artículo que contiene la consulta buscada que estamos buscando. 
+		Resaltar el texto facilitará al usuario encontrar lo que busca. </p>
+		
+
+		
+		<p>Un formato estándar común es el texto negro sobre un fondo amarillo,
+		pero esto se puede cambiar con CSS.</p>
+		
+		<h2><a>Sección 5.2: Negrita, cursiva y subrayado</a></h2>
+		
+		<p><b>Texto en negrita</b></p>
+		<p>Para texto en negrita, use el <code>&lt;strong&gt;</code> o <code>&lt;b&gt;</code> etiquetas:</p>
+			
+		<p><b><code>&lt;strong&gt;</code></b> Texto en negrita aquí <code>&lt;/strong&gt;</code></p>
+			
+		<p>o</p>
+			
+		<p><b><code>&lt;b&gt;</code></b> Texto en negrita aquí en negrita <b><code>&lt;/b&gt;</code></b> </p>
+		
+		<p>¿Cual es la diferencia? Semántica. <b><code>&lt;strong&gt;</code></b>  se utiliza para indicar que el texto es fundamental o semánticamente
+		importante para el texto circundante, mientras que<b><code>&lt;b&gt;</code></b> no indica tal importancia y simplemente representa texto que debería
+		estar en negrita. </p>
+		
+		<p>Si tuvieras que usar <code>&lt;b&gt;</code>  Un programa de conversión de texto a voz no diría la (s) palabra (s) de manera diferente a cualquiera de las otras
+		palabras a su alrededor: simplemente está llamando la atención sobre ellas sin agregar ninguna importancia adicional. 
+		Mediante el uso <code>&lt;strong&gt;</code>, Sin embargo, el mismo programa querría decir esas palabras con un tono de voz diferente para transmitir
+		que el texto es importante de alguna manera.</p>
+		
+			<P><b>Texto en cursiva</b></p>
+		<p>Para poner en cursiva el texto, use el <code>&lt;em&gt;</code> o <code>&lt;i&gt;</code> etiquetas:</p>
+		
+		<p><b><code>&lt;em&gt;</code></b>Texto en cursiva aquí<b><code>&lt;/em&gt;</code></b></p>
+		
+		<p>O</p>
+		<p><b><code>&lt;i&gt;</code></b>Texto en cursiva aquí<b><code>&lt;/i&gt;</code></b></p>
+			
+		<p>¿Cual es la diferencia? Semántica.<b><code>&lt;em&gt;</code></b> se utiliza para indicar que el texto debe tener un énfasis adicional que debe ser
+		estresado, mientras <code>&lt;i&gt;</code> simplemente representa texto que debe diferenciarse del texto normal que lo rodea.</p>
+		
+		<p> Por ejemplo, si desea enfatizar la acción dentro de una oración, puede hacerlo enfatizándola en cursiva a través de 
+		<code>&lt;em&gt;</code>:"¿Podrías enviar la edición ya?"</p>
+		
+		<p>Pero si estuviera identificando un libro o periódico que normalmente pondría en cursiva estilísticamente, simplemente usaría
+		<code>&lt;i&gt;</code>: "Me vi obligado a leer Romeo y Julieta en la escuela secundaria.</p>
+		<p><b>Texto subrayado</b></p>
+		<p>Mientras que la<code>&lt;u&gt;</code>elemento en sí fue obsoleto en HTMl 4, se reintrodujo con un significado semántico alternativo en
+		HTML 5: para representar una anotación no textual no articulada. Puede usar una representación de este tipo para indicar
+		texto mal escrito en la página, o para una marca de nombre propio en chino.</p>
+		<p><code>&lt;p&gt;</code>Este párrafo contiene algunos<code>&lt;u&gt;</code> texto.<code>&lt;/p&gt;</code></p>
+		
+		<h2><a>Sección 5.3: Abreviatura</a></h2>
+		<p>Para marcar alguna expresión como abreviatura, utilice<code>&lt;abbr&gt;</code>etiqueta:</p>
+		<p><code>&lt;p&gt;</code> me gusta escribir <code>&lt;abbr title="Hypertext Markup Language"&gt;!</code> </p>
+		<p>Si está presente, el atributo de título se utiliza para presentar la descripción completa de dicha abreviatura.</p>
+		
+		<h2><a>Sección 5.4: Insertado, eliminado o golpeado</a></h2>
+		<p>Para marcar texto como insertado, use el <code>&lt;ins&gt;</code>etiqueta:</p>
+		
+		<p><code>&lt;ins&gt;</code> Nuevo texto<code>&lt;/ins&gt;</code></p>
+		<p>Para marcar el texto como eliminado, use el<code>&lt;del&gt;</code></p>
+		<p><code>&lt;del&gt;</code>Texto eliminado<code>&lt;/del&gt;</code></p>
+		<p>Para tachar el texto, use el<code>&lt;s&gt;</code>etiqueta:</p>
+		<p><code>&lt;s&gt;</code>Texto de tachado aquí<code>&lt;/s&gt;</code></p>
+		
+		<h2><a>Sección 5.5: Superíndice y subíndice</a></h2>
+		<p>Para desplazar el texto hacia arriba o hacia abajo, puede utilizar las etiquetas<code>&lt;sup&gt;</code> y <code>&lt;sub&gt;</code></p>
+		<p>Para crear superíndice:</p>
+		<p><code>&lt;sup&gt;</code>superíndice aquí<code>&lt;/sup&gt;</code></p>
+		<p>Para crear un subíndice:</p>
+		<p><code>&lt;sub&gt;</code>subíndice aquí<code>&lt;/sub&gt;</code></p>
+		
+	</div>
+</header>
+		<article>
+	<h1><a>Capítulo 11: Atributos de datos</a></h1>
+		<h2><a>Sección 11.1: Compatibilidad con navegadores antiguos</a></h2>
+		<p> Los atributos de datos se introdujeron en HTML5, que es compatible con todos los navegadores modernos, pero los navegadores más antiguos antes
+		HTML5 no reconoce los atributos de los datos.</p>
+		<p>Sin embargo, en las especificaciones HTML, los atributos que no son reconocidos por el navegador deben dejarse en paz y
+		el navegador simplemente los ignorará al representar la página.</p>
+		<p>Los desarrolladores web han utilizado este hecho para crear atributos no estándar que son atributos que no forman parte del
+		Especificaciones HTML. Por ejemplo, el atributo de valor en la línea siguiente se considera un atributo no estánda
+		porque las especificaciones para el<code>&lt;img&gt;</code>la etiqueta no tiene un atributo de valor y no es un atributo global:</p>
+		<p><code>&lt;img src="sample.jpg" value="test"/&gt;</code></p>
+		<p>Esto significa que aunque los atributos de datos no son compatibles con los navegadores más antiguos, aún funcionan y puede configurar y
+		recuperarlos usando los mismos métodos genéricos setAttribute y getAttribute de JavaScript, pero no puede usar el
+		nueva propiedad del conjunto de datos que solo es compatible con los navegadores modernos.</p>
+		<h2><a>Sección 11.2: Uso de atributos de datos</a></h2>
+		<p>Los atributos de datos HTML5 * proporcionan una forma conveniente de almacenar datos en elementos HTML. Los datos almacenados se pueden leer o
+		modificado usando JavaScript</p>
+		<p> <code>&lt;div data-submitted="yes" class="user_profile"&gt;</code></p>
+		<p> ... algo de contenido ...</p>
+		<p><code>&lt;/div&gt;</code></p>
+		<p>La estructura del atributo de datos es data- *, es decir, el nombre del atributo de datos viene después de la parte de datos. Usando esto
+		nombre, se puede acceder al atributo.</p>
+		<p>Los datos en formato de cadena (incluido json) se pueden almacenar utilizando el atributo data- *.</p>
+		</article>
+		<article>
+		<h1><a>Capítulo 21: Barras de navegación</a></h1>
+			<h2><a>Sección 21.1: Barra de navegación básica</a></h2>
+			<p>Las barras de navegación son esencialmente una lista de enlaces, por lo que los elementos ul y li se utilizan para encerrar enlaces de navegación.</p>
+			
+			<p><code>&lt;url&gt;</code></p>
+			<p><code>&lt;li&gt;</code><code>&lt;a href="#"></code>Hogar<code>&lt;/a&gt;</code><code>&lt;/li&gt;</code></p>
+			<p><code>&lt;li&gt;</code><code>&lt;a href="#"></code>Acerca de<code>&lt;/a&gt;</code><code>&lt;/li&gt;</code></p>
+			<p><code>&lt;li&gt;</code><code>&lt;a href="#"></code>Contacto<code>&lt;/a&gt;</code><code>&lt;/li&gt;</code></p>
+			<p><code>&lt;/url&gt;</code></p>
+			<h2><a>Sección 21.2: Barra de navegación HTML5</a></h3>
+			<p> Para hacer una barra de navegación usando el elemento de navegación HTML5, encierre los enlaces dentro de la etiqueta de navegación.</p>
+			<p><code>&lt;nav&gt;</code></p>
+			<p><code>&lt;a href="#"></code>Hogar<code>&lt;/a&gt;</code></p>
+			<p><code>&lt;a href="#"></code>Acerca de<code>&lt;/a&gt;</code></p>
+			<p><code>&lt;a href="#"></code>Contacto<code>&lt;/a&gt;</code></p>
+			<p><code>&lt;/nav&gt;</code></p>
+			</article>
+			
+			<div class= "Libro_css">
+			<h1><a>Capítulo 2: Estructura y formato de una regla CSS</a></h1>
+		<section id="main">
+		<h2><a>Sección 2.1: Listas de propiedades</a></h2>
+		<p>Algunas propiedades pueden tomar varios valores, conocidos colectivamente como <b>lista de propiedades.</b></p>
+			<code><P>	/* Dos valores en esta lista de propiedades */</p>
+		<p>span {</p>
+		<p> text-shadow: yellow 0 0 3px, green 4px 4px 10px;</p>
+		<p>}</p>
+		<p>/* Formato alternativo */</p>
+		<p>span {</p>
+		<p> text-shadow:</p>
+		<p> yellow 0 0 3px,</p>
+		<p> green 4px 4px 10px;</p>
+		<p>}</p></code>
+		
+		<h2><a>Sección 2.2: Selectores múltiples</a></h2>
+		<p> Cuando agrupa selectores CSS, aplica los mismos estilos a varios elementos diferentes sin repetir los estilos
+		en tu hoja de estilo. Utilice una coma para separar varios selectores agrupados.</p>
+		<p><code>div, p { color: blue }</code></p>
+		<p> Entonces el color azul se aplica a todos <code>&lt;div&gt;</code> elementos y todo <code>&lt;p&gt;</code> elementos. Sin la coma solamente <code>&lt;p&gt;</code> elementos que son
+		Un hijo de un <code>&lt;div&gt;</code> Sería rojo.</p>
+		<p> Esto también se aplica a todos los tipos de selectores.</p>
+		<code><p> p, .blue, #first, div span{ color : blue }</code></p>
+		
+		<p>Esta regla se aplica a:</p>
+	<p><code>&lt;p&gt;</p>
+	<p>	elementos de la clase azul</p>
+	<p>	elemento con el ID primero</p>
+	<p>	cada &lt;span&gt; dentro de un &lt;div&gt;</code></p>
+	
+		<h2><a>Sección 2.3: Reglas, selectores y bloques de declaración</a></h2>
+		<p> Una regla CSS consta de un selector (por ejemplo, h1) y un bloque de declaración ({}).</p>
+		<p><code>h1 {}</code></p>
+	
+			<h1><a>Capítulo 3: Comentarios</a></h1>
+		<h2></a>Sección 3.1: Línea única</a></h2>
+	<p> /* Este es un comentario de CSS */</p>
+	<p>div {</p>
+	<p>color: red; /* Este es un comentario de CSS */</p> 
+	<p>}</p>
+	
+	<h2><a>Sección 3.2: Línea múltiple</a></h2>
+	<code>
+	<p>/*</p>
+		<p>Esto</p>
+		<p>es</p>
+		<p>un</p>
+		<p>CSS</p>
+		<p>comentario</p>
+		<p>*/</p>
+		<p>div {</p>
+		<p>color: red;</p>
+		<p>}</p>
+		</code>
+	
+			<h1><a>Capítulo 19: Opacidad</a></h1>
+			<p>La opacidad de un elemento se puede establecer mediante la propiedad de opacidad. Los valores pueden oscilar entre 0,0 (transparente) y 1,0
+			(opaco).</p>
+			<p><b>Ejemplo de uso</b></p>
+			<p>&lt;div style="opacity:0.8;"&gt;</p>
+			
+			<table id="1">
+			<tr >
+			<th><b>Valor de propiedad </b></th>
+			<th><b> Transparencia</b></th>
+			</tr>
+			<tr>
+			<td>opacidad: 1.0;</th>
+			<td>Opaco</th>
+			</tr>
+			<tr>
+			<td>opacidad: 0.75;</th>
+			<td>25% transparente (75% Opaco)</th>
+			</tr>
+			<tr>
+			<td>opacidad: 0.5; </th>
+			<td>50% transparente (50% Opaco)</th>
+			</tr>
+			<tr>
+			<td>opacidad: 0.25;</th>
+			<td>75% transparente (25% Opaco)</th>
+			</tr>
+			<tr>
+			<td>opacidad: 0.0; </th>
+			<td>Transparente</th>
+			</tr>
+			</table>
+			
+			<h2><a>Sección 19.2: Compatibilidad de IE para `opacidad`</a></h2>
+			<p>Para usar la opacidad en todas las versiones de IE, el orden es:</p>
+			<code>
+			<p> .transparent-element {</p>
+			<p> /* for IE 8 & 9 */</p>
+			<p>-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; // IE8</p>
+			<p> /* works in IE 8 & 9 too, but also 5, 6, 7 */</p>
+			<p> filter: alpha(opacity=60); // IE 5-7</p>
+			<p>/* Modern Browsers */</p>
+			<p>opacity: 0.6;</p>
+			<p>}</p>
+			</code>
+			</section>
+
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML5 Notes for professionals</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="print.css" media="print">
+	</head><body>
+				<div id="wrapper">
+				<h1><a>HTML5 Notes for professionals</a></h1>
+				<table id="idioma1">
+					<tr>
+					<TH><b>Language:</b></th>
+					<th><a href="index1.html"><img  id="idioma" src="img/en.png"/></a>
+					<th><a href="index.html"><img  id="idioma" src="img/es.jpg"/></a>
+					</tr>
+					<tr>
+					</table>
+<header>
+<footer>
+	<div class="headline">
+	<article>
+		<h1><a>Chapter 5: Text Formatting</a></h1>
+		<p>While most HTML tags are used to create elements, HTML also provides in-text formatting tags to apply specific
+		text-related styles to portions of text. This topic includes examples of HTML text formatting such as highlighting,
+		bolding, underlining, subscript, and stricken text.</p>
+		<h2><a>Section 5.1: Highlighting</a></h2>
+		<p>The <code>&lt;mark&gt;</code> element is new in HTML5 and is used to mark or highlight text in a document "due to its relevance in
+		another context".[1].</p>
+		
+		
+		<p>The most common example would be in the results of a search were the user has entered a search query <code>&lt;/mark&gt;</code>and
+		results are shown highlighting the desired query.</p>
+		
+		
+		<p><code>&lt;(p)&gt;</code>Here is some content from an article that contains the <code>&lt;(mark)&gt;</code>searched query
+		 <code>&lt;/mark&gt;</code>that we are looking for. Highlighting the text will make it easier for the user to
+		find what they are looking for.<code>&lt;/p&gt;</code></p>
+		
+		
+		<p>Output:</p>
+		
+
+		
+		<p>Here is some content from an article that contains the searched query that we are looking for. Highlighting 
+		he text will make it easier for the user to find what they are looking for. </p>
+		
+
+		
+		<p>A common standard formatting is black text on a yellow background, 
+		but this can be changed with CSS.</p>
+		
+		<h2><a>Section 5.2: Bold, Italic, and Underline</a></h2>
+		<p><b>Bold text</b></p>
+		
+		<p>To bold text, use the <code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code> tags:</p>
+	
+		<p><b><code>&lt;strong&gt;</code></b> Bold Text Here <code>&lt;/strong&gt;</code></p>
+			
+		<p>or</p>
+			
+		<p><b><code>&lt;b&gt;</code></b> Bold Text Here Bold <b><code>&lt;/b&gt;</code></b> </p>
+		
+		<p>What’s the difference? Semantics. <b><code>&lt;strong&gt;</code></b>  is used to indicate that the text is fundamentally or semantically
+		important to the surrounding text, while <b><code>&lt;b&gt;</code></b> indicates no such importance and simply represents text that should
+		be bolded. </p>
+		
+		<p>If you were to use <code>&lt;b&gt;</code>  a text-to-speech program would not say the word(s) any differently than any of the other
+		words around it - you are simply drawing attention to them without adding any additional importance. 
+		By using <code>&lt;strong&gt;</code>, though, the same program would want to speak those word(s) with a different tone of voice to convey
+		that the text is important in some way.</p>
+		
+			<P><b>Italic Text</b></p>
+		<p>To italicize text, use the <code>&lt;em&gt;</code> or <code>&lt;i&gt;</code> tags:</p>
+		
+		<p><b><code>&lt;em&gt;</code></b>Italicized Text Here<b><code>&lt;/em&gt;</code></b></p>
+		
+		<p>Or</p>
+		<p><b><code>&lt;i&gt;</code></b>Italicized Text Here<b><code>&lt;/i&gt;</code></b></p>
+			
+		<p>What’s the difference? Semantics.<b><code>&lt;em&gt;</code></b> is used to indicate that the text should have extra emphasis that should be
+		stressed, while <code>&lt;i&gt;</code> simply represents text which should be set off from the normal text around it.</p>
+		
+		<p> For example, if you wanted to stress the action inside a sentence, one might do so by emphasizing it in italics via 
+		<code>&lt;em&gt;</code>:"Would you just submit the edit already?"</p>
+		
+		<p>But if you were identifying a book or newspaper that you would normally italicize stylistically, you would simply use
+		<code>&lt;i&gt;</code>: "I was forced to read Romeo and Juliet in high school.</p>
+		<p><b>Underlined Text</b></p>
+		<p>While the<code>&lt;u&gt;</code>element itself was deprecated in HTMl 4, it was reintroduced with alternate semantic meaning in
+		HTML 5 - to represent an unarticulated, non-textual annotation. You might use such a rendering to indicate
+		misspelled text on the page, or for a Chinese proper name mark.</p>
+		<p><code>&lt;p&gt;</code>This paragraph contains some<code>&lt;u&gt;</code> text.<code>&lt;/p&gt;</code></p>
+		
+		<h2><a>Section 5.3: Abbreviation</a></h2>
+		<p>To mark some expression as an abbreviation, use<code>&lt;abbr&gt;</code>tag:</p>
+		<p><code>&lt;p&gt;</code> I like to write <code>&lt;abbr title="Hypertext Markup Language"&gt;!</code> </p>
+		<p>If present, the title attribute is used to present the full description of such abbreviation.</p>
+		
+		<h2><a>Section 5.4: Inserted, Deleted, or Stricken</a></h2>
+		<p>To mark text as inserted, use the <code>&lt;ins&gt;</code>tag:</p>
+		
+		<p><code>&lt;ins&gt;</code> New Text<code>&lt;/ins&gt;</code></p>
+		<p>To mark text as deleted, use the<code>&lt;del&gt;</code></p>
+		<p><code>&lt;del&gt;</code>Deleted Text<code>&lt;/del&gt;</code></p>
+		<p>To strike through text, use the<code>&lt;s&gt;</code>tag:</p>
+		<p><code>&lt;s&gt;</code>Struck-through text here<code>&lt;/s&gt;</code></p>
+		
+		<h2><a>Section 5.5: Superscript and Subscript</a></h2>
+		<p>To offset text either upward or downward you can use the tags<code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code></p>
+		<p>To create superscript:</p>
+		<p><code>&lt;sup&gt;</code>superscript here<code>&lt;/sup&gt;</code></p>
+		<p>To create subscript:</p>
+		<p><code>&lt;sub&gt;</code>subscript here<code>&lt;/sub&gt;</code></p>
+		</article>
+	</div>
+</header>
+		<article>
+	<h1><a>Chapter 11: Data Attributes</a></h1>
+		<h2><a>Section 11.1: Older browsers support</a></h2>
+		<p> Data attributes were introduced in HTML5 which is supported by all modern browsers, but older browsers before
+		HTML5 don't recognize the data attributes.</p>
+		<p>However, in HTML specifications, attributes that are not recognized by the browser must be left alone and the
+		browser will simply ignore them when rendering the page.</p>
+		<p>Web developers have utilized this fact to create non-standard attributes which are any attributes not part of the
+		HTML specifications. For example, the value attribute in the line bellow is considered a non-standard attribute
+		because the specifications for the<code>&lt;img&gt;</code>tag don't have a value attribute and it is not a global attribute:</p>
+		<p><code>&lt;img src="sample.jpg" value="test"/&gt;</code></p>
+		<p>This means that although data attributes are not supported in older browsers, they still work and you can set and
+		retrieve them using the same generic JavaScript setAttribute and getAttribute methods, but you cannot use the
+		new dataset property which is only supported in modern browsers.</p>
+		<h2><a>Section 11.2: Data Attribute Use</a></h2>
+		<p>HTML5 data-* attributes provide a convenient way to store data in HTML elements. The stored data can be read or
+		modified using JavaScript</p>
+		<p> <code>&lt;div data-submitted="yes" class="user_profile"&gt;</code></p>
+		<p> … some content …</p>
+		<p><code>&lt;/div&gt;</code></p>
+		<p>Data attribute structure is data-*, i.e. the name of the data attribute comes after the data- part. Using this
+		name, the attribute can be accessed.</p>
+		<p>Data in string format (including json) can be stored using data-* attribute.</p>
+		</article>
+		<article>
+		<h1><a>Chapter 21: Navigation Bars</a></h1>
+			<h2><a>Section 21.1: Basic Navigation Bar</a></h2>
+			<p>Navigation bars are essentially a list of links, so the ul and li elements are used to encase navigation links.</p>
+			
+			<p><code>&lt;url&gt;</code></p>
+			<p><code>&lt;li&gt;</code><code>&lt;a href="#"></code>Home<code>&lt;/a&gt;</code><code>&lt;/li&gt;</code></p>
+			<p><code>&lt;li&gt;</code><code>&lt;a href="#"></code>About<code>&lt;/a&gt;</code><code>&lt;/li&gt;</code></p>
+			<p><code>&lt;li&gt;</code><code>&lt;a href="#"></code>Contact<code>&lt;/a&gt;</code><code>&lt;/li&gt;</code></p>
+			<p><code>&lt;/url&gt;</code></p>
+			<h2><a>Section 21.2: HTML5 Navigation Bar</a></h2>
+			<p> To make a navigation bar using the HTML5 nav element, encase the links within the nav tag.</p>
+			<p><code>&lt;nav&gt;</code></p>
+			<p><code>&lt;a href="#"></code>Home<code>&lt;/a&gt;</code></p>
+			<p><code>&lt;a href="#"></code>About<code>&lt;/a&gt;</code></p>
+			<p><code>&lt;a href="#"></code>Contact<code>&lt;/a&gt;</code></p>
+			<p><code>&lt;/nav&gt;</code></p>
+			</article>
+			
+			<div class= "Libro_css">
+			<h1><a>Chapter 2: Structure and Formatting of a CSS Rule</a></h1>
+		<section id="main">
+		<h2><a>Section 2.1: Property Lists</a></h2>
+		<p>Some properties can take multiple values, collectively known as a <b>lista de propiedades.</b></p>
+			<code><P>	/* Two values in this property list */</p>
+		<p>span {</p>
+		<p> text-shadow: yellow 0 0 3px, green 4px 4px 10px;</p>
+		<p>}</p>
+		<p>/* Alternate Formatting */</p>
+		<p>span {</p>
+		<p> text-shadow:</p>
+		<p> yellow 0 0 3px,</p>
+		<p> green 4px 4px 10px;</p>
+		<p>}</p></code>
+		
+		<h2><a>Section 2.2: Multiple Selectors</a></h2>
+		<p> When you group CSS selectors, you apply the same styles to several different elements without repeating the styles
+		in your style sheet. Use a comma to separate multiple grouped selectors.</p>
+		<p><code>div, p { color: blue }</code></p>
+		<p> So the blue color applies to all <code>&lt;div&gt;</code> elements and all <code>&lt;p&gt;</code> elements. Without the comma only <code>&lt;p&gt;</code> elements that are
+		ua child of a <code>&lt;div&gt;</code> would be red.</p>
+		<p> This also applies to all types of selectors.</p>
+		<code><p> p, .blue, #first, div span{ color : blue }</code></p>
+		
+		<p>This rule applies to:</p>
+	<p><code>&lt;p&gt;</p>
+	<p>	elements of the blue class</p>
+	<p>	element with the ID first</p>
+	<p>	every &lt;span&gt; inside of a &lt;div&gt;</code></p>
+	
+		<h2><a>Section 2.3: Rules, Selectors, and Declaration Blocks</a></h2>
+		<p> A CSS rule consists of a selector (e.g. h1) and declaration block ({}).</p>
+		<p><code>h1 {}</code></p>
+	
+			<h1><a>Chapter 3: Comments</a></h1>
+		<h2><a>Section 3.1: Single Line</a></h2>
+	<p> /* This is a CSS comment */</p>
+	<p>div {</p>
+	<p>color: red; /* This is a CSS comment */</p> 
+	<p>}</p>
+	
+	<h2><a>Section 3.2: Multiple Line</a></h2>
+	<code>
+	<p>/*</p>
+		<p>This</p>
+		<p>is</p>
+		<p>a</p>
+		<p>CSS</p>
+		<p>comment</p>
+		<p>*/</p>
+		<p>div {</p>
+		<p>color: red;</p>
+		<p>}</p>
+		</code>
+	
+			<h1><a>Chapter 19: Opacity</a></h1>
+			<p>An element's opacity can be set using the opacity property. Values can be anywhere from 0.0 (transparent) to 1.0
+			(opaque).</p>
+			<p><b>Example Usage</b></p>
+			<p>&lt;div style="opacity:0.8;"&gt;</p>
+			
+			<table id="1">
+			<tr >
+			<th><b>Property Value </b></th>
+			<th><b> Transparency</b></th>
+			</tr>
+			<tr>
+			<td>opacity: 1.0;</th>
+			<td>Opaque</th>
+			</tr>
+			<tr>
+			<td>opacity: 0.75;</th>
+			<td>25% transparent (75% Opaque)</th>
+			</tr>
+			<tr>
+			<td>opacity: 0.5; </th>
+			<td>50% transparent (50% Opaque)</th>
+			</tr>
+			<tr>
+			<td>opacity: 0.25;</th>
+			<td>75% transparent (25% Opaque)</th>
+			</tr>
+			<tr>
+			<td>opacity: 0.0; </th>
+			<td>Transparent</th>
+			</tr>
+			</table>
+			
+			<h2><a>Section 19.2: IE Compatibility for `opacity`</a></h2>
+			<p>To use opacity in all versions of IE, the order is:</p>
+			<code>
+			<p> .transparent-element {</p>
+			<p> /* for IE 8 & 9 */</p>
+			<p>-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; // IE8</p>
+			<p> /* works in IE 8 & 9 too, but also 5, 6, 7 */</p>
+			<p> filter: alpha(opacity=60); // IE 5-7</p>
+			<p>/* Modern Browsers */</p>
+			<p>opacity: 0.6;</p>
+			<p>}</p>
+			</code>
+			</section>
+
+</footer>
+</div>
+</body>
+</html>
